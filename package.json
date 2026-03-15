@@ -1,0 +1,41 @@
+{
+  "name": "mcps-audit",
+  "version": "1.0.0",
+  "description": "OWASP Security Scanner for MCP Servers — scans against OWASP MCP Top 10 + Agentic AI Top 10",
+  "main": "lib/reporter.js",
+  "bin": {
+    "mcps-audit": "./bin/mcps-audit.js"
+  },
+  "scripts": {
+    "test": "node test/test.js",
+    "scan": "node bin/mcps-audit.js"
+  },
+  "keywords": [
+    "mcp",
+    "owasp",
+    "security",
+    "audit",
+    "scanner",
+    "agentic-ai",
+    "mcps"
+  ],
+  "author": "CyberSecAI Ltd <contact@agentsign.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/razashariff/mcps-audit.git"
+  },
+  "homepage": "https://agentsign.dev/scan",
+  "dependencies": {
+    "pdfkit": "^0.15.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ]
+}
